@@ -18,7 +18,7 @@ const result = elevationMap.reduce((acc, lvl) => {
 }, 0);
 
 function cycleStart(arr) {
-  let index = false;
+  let index = 0;
 
   for (let i = 0; i <= arr.length; i++) {
     if (arr[i]) {
@@ -31,7 +31,7 @@ function cycleStart(arr) {
 }
 
 function cycleFinish(arr) {
-  let index = false;
+  let index = 0;
 
   for (let i = arr.length; i >= 0; i--) {
     if (arr[i]) {

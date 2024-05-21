@@ -20,7 +20,7 @@ const result = elevationMap.reduce((acc, lvl) => {
 function cycleStart(arr) {
   let index = 0;
 
-  for (let i = 0; i <= arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i]) {
       index = i;
       break;
@@ -33,7 +33,7 @@ function cycleStart(arr) {
 function cycleFinish(arr) {
   let index = 0;
 
-  for (let i = arr.length; i >= 0; i--) {
+  for (let i = arr.length - 1; i >= 0; i--) {
     if (arr[i]) {
       index = i;
       break;
